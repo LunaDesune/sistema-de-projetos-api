@@ -6,9 +6,9 @@ services:
     image: postgres
     container_name: postgres_db
     environment:
-      - POSTGRES_USER=lumidev
-      - POSTGRES_PASSWORD=123456
-      - POSTGRES_DB=sistema_de_projetos
+      POSTGRES_USER: lumidev
+      POSTGRES_PASSWORD: "123456"
+      POSTGRES_DB: sistema_de_projetos
     volumes:
       - postgres_data:/var/lib/postgres/data
     ports:
